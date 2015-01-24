@@ -25,7 +25,6 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="37dp"
-        android:onClick="setContentView"
         android:selectAllOnFocus="false"
         android:singleLine="false" />
 
@@ -76,13 +75,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/submit"
+        android:text="@string/next"
         android:id="@+id/button"
-        android:onClick="submit"
-        android:layout_below="@+id/editText5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
+        android:onClick="next"
+        android:layout_marginTop="40dp"
         android:background="@color/background_material_dark"
-        android:textColor="@color/background_material_light" />
+        android:textColor="@color/background_material_light"
+        android:layout_below="@+id/age"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
