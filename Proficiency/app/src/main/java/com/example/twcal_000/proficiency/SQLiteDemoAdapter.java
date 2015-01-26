@@ -21,7 +21,6 @@ public class SQLiteDemoAdapter {
     }
 
     public void insertData(String fname, String lname, String email, String phone, String age) {
-
         SQLiteDatabase db = helper.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(SQLiteDemo.fName, fname);
@@ -49,11 +48,8 @@ public class SQLiteDemoAdapter {
             String age = cursor.getString(5);
             buffer.append(cid+" "+fname+" "+lname+" "+email+" "+phone+" "+age+"\n");
         }
-
         return buffer.toString();
     }
-
-
 
     public int deleteRow(){
         SQLiteDatabase db = helper.getWritableDatabase();
