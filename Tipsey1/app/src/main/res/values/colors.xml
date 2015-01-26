@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="mainActivityColor">#ffff66</color>
+    <color name="aboutActivityColor">#99ccff</color>
+    
+</resources>

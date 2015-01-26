@@ -33,8 +33,9 @@ public class SQLiteDemoAdapter {
         db.insert(SQLiteDemo.TABLE_NAME, null, contentValues);
     }
 
-    public void getData(){
+    public String getData(){
         SQLiteDatabase db = helper.getWritableDatabase();
+
         String[] columns={helper.UID, helper.fName, helper.lName, helper.email, helper.phone, helper.age};
         Cursor cursor= db.query(helper.TABLE_NAME, columns, null, null, null, null, null);
         StringBuffer buffer = new StringBuffer();
@@ -47,9 +48,19 @@ public class SQLiteDemoAdapter {
             String phone = cursor.getString(4);
             String age = cursor.getString(5);
             buffer.append(cid+" "+fname+" "+lname+" "+email+" "+phone+" "+age+"\n");
-
         }
+
+        return buffer.toString();
     }
+
+
+
+    public int deleteRow(){
+        SQLiteDatabase db = helper.getWritableDatabase();
+        int count = db.delete(helper.TABLE_NAME, helper.UID, null);
+        return count;
+    }
+
     class SQLiteDemo extends SQLiteOpenHelper {
 
         //setting the database variables

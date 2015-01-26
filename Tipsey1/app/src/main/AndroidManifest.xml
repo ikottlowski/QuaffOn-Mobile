@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Immanuel Kottlowski
+CSCI-A290
+03/08/2014
+ -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ike.kottlowski.tipsey"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="ike.kottlowski.tipsey.TipseyMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- activity for the about button -->
+        <activity
+            android:name="ike.kottlowski.tipsey.aboutActivity"
+            android:label="@string/about" >
+        </activity>
+        
+        <!-- start game activity button -->
+        <activity android:name="ike.kottlowski.tipsey.startGameActivity" >
+        </activity>
+        
+        <!-- post game dialog -->
+        <activity
+            android:name="ike.kottlowski.tipsey.postGameActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+    </application>
+
+</manifest>

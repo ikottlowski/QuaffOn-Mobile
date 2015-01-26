@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TipseyMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".TipseyMainActivity" >
+
+    <!-- image of the application -->
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="264dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/imageName"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- Table that hold the buttons for navagation -->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal" 
+        android:background="@color/mainActivityColor">
+
+        <TableRow
+            android:id="@+id/rowOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/start"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <!--  
+            <Button
+                android:id="@+id/statsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/stats"
+                android:textSize="25sp" />
+			-->
+            <Button
+                android:id="@+id/aboutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/about"
+                android:textSize="25sp" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
