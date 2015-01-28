@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuaffOnBloomington</string>
+    <string name="action_settings">Settings</string>
+    <string name="drinkheartily">"Drink Heartily, Eat Socially"</string>
+    <string name="logodescription">Design on Quaff on Sign</string>
+    <string name="email_login">Enter Email!</string>
+    <string name="password_login">Enter Your Password</string>
+</resources>

@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/main_back_gound_green"
+    tools:context=".LoadingScreen"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:baselineAligned="false"
+    android:showDividers="beginning"
+    android:transitionGroup="false">
+
+    <ImageView
+        android:layout_width="148dp"
+        android:layout_height="127dp"
+        android:background="@drawable/quaff_on_logo"
+        android:id="@+id/quaff_on_image"
+        android:contentDescription="@string/logodescription"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="0.10" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailedit_login"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/email_login"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password_login"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/password_login"
+        android:gravity="center" />
+
+</LinearLayout>
