@@ -7,4 +7,11 @@
     <string name="logodescription">Design on Quaff on Sign</string>
     <string name="email_login">Enter Email!</string>
     <string name="password_login">Enter Your Password</string>
+    <string name="login_screen">Log In</string>
+    <string name="go_to_app"> Skip Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+
 </resources>

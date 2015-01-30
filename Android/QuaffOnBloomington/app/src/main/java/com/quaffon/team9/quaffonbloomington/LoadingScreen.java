@@ -1,5 +1,6 @@
 package com.quaffon.team9.quaffonbloomington;
 
+import android.content.Intent;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -16,16 +17,22 @@ public class LoadingScreen extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_loading_screen);
 
-        new CountDownTimer(2000, 1000) {
-            public void onTick(long millisUntilFinished) {
+        new CountDownTimer(2000, 1000){
+            public void onTick(long millisUntilFinished){
                 Log.v(Loading_TAG, "seconds remaining: " + millisUntilFinished / 1000);
             }
             public void onFinish() {
-                setContentView(R.layout.log_in_screen);
+                goToLogIn();
                 Log.v(Loading_TAG, "done!");
             }
         }.start();
+    }
+
+    public void goToLogIn(){
+        Intent login_Activity = new Intent(this, LogInScreen.class);
+        startActivity(login_Activity);
     }
 }
