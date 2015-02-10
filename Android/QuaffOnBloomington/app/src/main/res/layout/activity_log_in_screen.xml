@@ -14,7 +14,9 @@
     android:gravity="center"
     android:baselineAligned="false"
     android:showDividers="beginning"
-    android:transitionGroup="false">
+    android:transitionGroup="false"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
 
     <GridLayout
         android:layout_width="fill_parent"
@@ -33,7 +35,7 @@
             android:id="@+id/login_area">
 
             <ImageView
-                android:layout_width="220dp"
+                android:layout_width="215dp"
                 android:layout_height="170dp"
                 android:background="@drawable/quaff_on_logo"
                 android:id="@+id/quaff_on_image"
@@ -41,7 +43,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="0.17"
                 android:layout_marginBottom="25dp"
-                android:layout_marginTop="15dp" />
+                android:layout_marginTop="25dp" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -50,6 +52,7 @@
                 android:ems="10"
                 android:id="@+id/emailedit_login"
                 android:layout_gravity="center_horizontal"
+                android:selectAllOnFocus="true"
                 android:text="@string/email_login"
                 android:gravity="center"/>
 
@@ -60,8 +63,22 @@
                 android:ems="10"
                 android:id="@+id/password_login"
                 android:layout_gravity="center_horizontal"
+                android:selectAllOnFocus="true"
                 android:text="@string/password_login"
                 android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/login_button"
+                android:id="@+id/login_button"
+                android:onClick="login"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:textColor="#000000" />
 
         </LinearLayout>
 
@@ -83,11 +100,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/go_to_app"
                 android:onClick="skipToApp"
                 android:id="@+id/goToApp"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FF000000" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -97,7 +116,8 @@
                 android:onClick="goToSignUp"
                 android:id="@+id/signUp"
                 android:layout_column="2"
-                android:padding="5dp" />
+                android:layout_marginBottom="10dp"
+                android:textColor="#FF000000" />
         </GridLayout>
 
     </LinearLayout>
