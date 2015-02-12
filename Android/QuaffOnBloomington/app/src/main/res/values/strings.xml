@@ -10,6 +10,7 @@
     <string name="login_screen">Log In</string>
     <string name="go_to_app"> Skip Log In</string>
     <string name="sign_up">Sign Up</string>
+    <string name="main_menu">Main Menu</string>
     <string name="login_button">Login</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
