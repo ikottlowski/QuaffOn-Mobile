@@ -35,6 +35,7 @@ public class LogInActivity extends Activity implements View.OnClickListener {
 
     private static final String LOGIN_URL = "http://cgi.soic.indiana.edu/~team9/android/login.php";
 
+    private EditText user, pass;
     //JSON element ids from repsonse of php script:
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
@@ -45,6 +46,9 @@ public class LogInActivity extends Activity implements View.OnClickListener {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_loading_screen);
+
+        user = (EditText) findViewById(R.id.emailedit_login);
+        pass = (EditText) findViewById(R.id.password_login);
 
         new CountDownTimer(2000, 1000){
             public void onTick(long millisUntilFinished){
@@ -88,8 +92,8 @@ public class LogInActivity extends Activity implements View.OnClickListener {
         protected String doInBackground(String... args) {
             // Check for success tag
             int success;
-            String useremail = getText(R.id.emailedit_login).toString();
-            String password = getText(R.id.password_login).toString();
+            String useremail = findViewById(R.id.emailedit_login).toString();
+            String password = findViewById(R.id.password_login).toString();
             try {
                 // Building Parameters
                 List<NameValuePair> params = new ArrayList<NameValuePair>();

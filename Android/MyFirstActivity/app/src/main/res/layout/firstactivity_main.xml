@@ -1,0 +1,21 @@
+<!-- firstactivity_main.xml
+
+ * Contains the primary code for the
+ * Main Activity in this project
+ * 
+ * Created by: Alyeesha Puri
+ * Created on: 1/29/2015
+ * Last modified by: Alyeesha Puri
+ * Last modified on: 02/13/2015
+ * Assignment / Project: Assignment 2 - My First Activity
+
+ -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.indiana.myfirstactivity.FirstActivity"
+    tools:ignore="MergeRootFrame" />
+
