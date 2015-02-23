@@ -1,23 +1,27 @@
 package com.quaffon.team9.httpdemo;
 
-import org.apache.http.client.HttpClient;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends Activity {
 
-    private Button btnRequest, btnPost;
     private EditText etResponse, etPost;
 
     @Override
@@ -26,11 +30,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         // httpget button / display text
-        btnRequest = (Button) findViewById(R.id.btnRequest);
         etResponse = (EditText) findViewById(R.id.etRespose);
 
         // httppost button / edit text
-        btnPost = (Button) findViewById(R.id.btnPost);
         etPost = (EditText) findViewById(R.id.etPost);
 
     }
@@ -59,10 +61,17 @@ public class MainActivity extends Activity {
         new HttpHandler() {
             @Override
             public HttpUriRequest getHttpRequestMethod() {
+                HttpPost httpPost = new HttpPost("http://cgi.soic.indiana.edu/~team9/android/Database/index.php");
 
-                // return new HttpGet("http://cgi.soic.indiana.edu/~team9/android/fuckthisshit.html");
+                List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
+                nameValuePairs.add(new BasicNameValuePair("name", "zombies"));
+                try {
+                    httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+                return httpPost;
 
-                return new HttpPost("http://cgi.soic.indiana.edu/~team9/android/fuckthisshit.html");
             }
             @Override
             public void onResponse(String result) {
