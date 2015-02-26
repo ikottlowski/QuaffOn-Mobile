@@ -92,12 +92,12 @@ public class LogInActivity extends Activity implements View.OnClickListener {
         protected String doInBackground(String... args) {
             // Check for success tag
             int success;
-            String useremail = findViewById(R.id.emailedit_login).toString();
+            String email = findViewById(R.id.emailedit_login).toString();
             String password = findViewById(R.id.password_login).toString();
             try {
                 // Building Parameters
-                List<NameValuePair> params = new ArrayList<NameValuePair>();
-                params.add(new BasicNameValuePair("useremail", useremail));
+                List<NameValuePair> params = new ArrayList<>();
+                params.add(new BasicNameValuePair("email", email));
                 params.add(new BasicNameValuePair("password", password));
 
                 Log.d("request!", "starting");

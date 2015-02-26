@@ -5,9 +5,11 @@ package com.quaffon.team9.httpdemo;
  */
 import org.apache.http.client.methods.HttpUriRequest;
 
+import java.io.UnsupportedEncodingException;
+
 public abstract class HttpHandler {
 
-    public abstract HttpUriRequest getHttpRequestMethod();
+    public abstract HttpUriRequest getHttpRequestMethod() throws UnsupportedEncodingException;
 
     public abstract void onResponse(String result);
 
