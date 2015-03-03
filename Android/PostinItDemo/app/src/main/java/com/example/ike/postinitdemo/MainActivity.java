@@ -27,7 +27,7 @@ import com.example.ike.postinitdemo.Person;
 public class MainActivity extends Activity implements OnClickListener {
 
     TextView tvIsConnected;
-    EditText etName,etCountry,etTwitter;
+    EditText etName; //etCountry,etTwitter;
     Button btnPost;
 
     Person person;
@@ -39,8 +39,8 @@ public class MainActivity extends Activity implements OnClickListener {
         // get reference to the views
         tvIsConnected = (TextView) findViewById(R.id.tvIsConnected);
         etName = (EditText) findViewById(R.id.etName);
-        etCountry = (EditText) findViewById(R.id.etCountry);
-        etTwitter = (EditText) findViewById(R.id.etTwitter);
+        //etCountry = (EditText) findViewById(R.id.etCountry);
+       // etTwitter = (EditText) findViewById(R.id.etTwitter);
         btnPost = (Button) findViewById(R.id.btnPost);
 
         // check if you are connected or not
@@ -73,8 +73,8 @@ public class MainActivity extends Activity implements OnClickListener {
             // 3. build jsonObject
             JSONObject jsonObject = new JSONObject();
             jsonObject.accumulate("name", person.getName());
-            jsonObject.accumulate("country", person.getCountry());
-            jsonObject.accumulate("twitter", person.getTwitter());
+            //jsonObject.accumulate("country", person.getCountry());
+            //jsonObject.accumulate("twitter", person.getTwitter());
 
             // 4. convert JSONObject to JSON to String
             json = jsonObject.toString();
@@ -90,8 +90,8 @@ public class MainActivity extends Activity implements OnClickListener {
             httpPost.setEntity(se);
 
             // 7. Set some headers to inform server about the type of the content
-            httpPost.setHeader("Accept", "application/json");
-            httpPost.setHeader("Content-type", "application/json");
+            //httpPost.setHeader("Accept", "application/json");
+            //httpPost.setHeader("Content-type", "application/json");
 
             // 8. Execute POST request to the given URL
             HttpResponse httpResponse = httpclient.execute(httpPost);
@@ -129,7 +129,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 if(!validate())
                     Toast.makeText(getBaseContext(), "Enter some data!", Toast.LENGTH_LONG).show();
                 // call AsynTask to perform network operation on separate thread
-                new HttpAsyncTask().execute("http://hmkcode.appspot.com/jsonservlet");
+                new HttpAsyncTask().execute();
                 break;
         }
 
@@ -140,10 +140,10 @@ public class MainActivity extends Activity implements OnClickListener {
 
             person = new Person();
             person.setName(etName.getText().toString());
-            person.setCountry(etCountry.getText().toString());
-            person.setTwitter(etTwitter.getText().toString());
+            //person.setCountry(etCountry.getText().toString());
+            //person.setTwitter(etTwitter.getText().toString());
 
-            return POST(urls[0],person);
+            return POST("http://cgi.soic.indiana.edu/~team9/Database/index.html",person);
         }
         // onPostExecute displays the results of the AsyncTask.
         @Override
@@ -155,10 +155,10 @@ public class MainActivity extends Activity implements OnClickListener {
     private boolean validate(){
         if(etName.getText().toString().trim().equals(""))
             return false;
-        else if(etCountry.getText().toString().trim().equals(""))
+        /*else if(etCountry.getText().toString().trim().equals(""))
             return false;
         else if(etTwitter.getText().toString().trim().equals(""))
-            return false;
+            return false; */
         else
             return true;
     }
