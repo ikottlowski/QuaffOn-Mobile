@@ -1,0 +1,12 @@
+<!--  Tyler Leeth for A290 Android Final Project: Note taking app  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.indiana.mynotes.NotebooksActivity" >
+
+
+   <item android:id="@+id/action_newNotebook"
+          android:icon="@drawable/ic_action_new"
+          android:title="@string/action_new"
+          android:showAsAction="ifRoom"  />
+        
+</menu>

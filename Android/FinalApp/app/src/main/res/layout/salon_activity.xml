@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- salon_activity.xml
+Primary Layout file for this Project
+Created by: Kelly McGuinn
+
+Last Modified by: Kelly McGuinn
+Last Modified on: 3/6/15
+Assignment/Project: A290 Android Development
+Part of: Final App
+-->
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:orientation="vertical"
+    android:padding="12dp" 
+    >
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_row="4" />
+
+    <TextView
+        android:id="@+id/HerSkinIs"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_row="2"
+        android:text="@string/HerSkinIs"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/oily"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_row="3"
+        android:text="@string/oily"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/saloninstructions"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:text="@string/saloninstructions"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/girl"
+        android:layout_width="168dp"
+        android:layout_height="192dp"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_row="1"
+        android:src="@drawable/girl" />
+
+    <Button
+        android:id="@+id/cream"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_column="0"
+        android:layout_gravity="right|top"
+        android:layout_row="5"
+        android:text="@string/cream"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/alcohol"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="5"
+        android:text="@string/alcohol"
+        android:textSize="20sp" />
+
+</GridLayout>

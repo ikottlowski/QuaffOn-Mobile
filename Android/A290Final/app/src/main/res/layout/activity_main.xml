@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.jessiepusateri.a290final.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <!--activity_history.xml
+Contains the layout for the main activity
+Created by: Jessie Pusateri
+Created on: 3/6/15
+Last Modified by: Jessie Pusateri
+Last Modified on: 3/6/15
+Assignment/Project: A290 Android Development Final
+Part of: A290Final, Contains the layout for the main activity-->
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/hello_world"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp" />
+   
+    <Button
+        android:id="@+id/NotificationButton"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:onClick="setNotificationTime"
+        android:text="@string/NotificationButtonLabel" >
+
+    </Button>
+    
+    <Button
+        android:id="@+id/HistoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/HistoryButtonLabel" />
+    
+    <Button
+        android:id="@+id/InstructionsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/InstructionsButtonLabel" />
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.indiana.a290firstrealapplication.FirstRealAppMainActivity" 
+    
+    android:gravity="center_horizontal"
+    android:padding="30dp"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MainTitle" 
+        android:layout_marginBottom="25dp"
+        android:textSize="24.5sp"/>
+    
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ContinueButtonLabel"
+        />
+    
+    <Button
+        android:id="@+id/NewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NewButtonLabel"
+        />
+    
+    <Button
+        android:id="@+id/AboutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AboutButtonLabel"
+        />
+    
+    <Button
+        android:id="@+id/ExitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ExitButtonLabel"
+        />
+
+    
+</LinearLayout>

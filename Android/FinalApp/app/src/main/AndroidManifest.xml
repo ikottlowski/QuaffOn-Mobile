@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.indiana.finalapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainInstructions"
+ 			android:label="@string/instructions"
+ 			android:theme="@android:style/Theme.Dialog" >
+ 		</activity>
+ 		<activity android:name=".SalonWrong"
+ 		    android:label="@string/oops"
+ 			android:theme="@android:style/Theme.Dialog" >
+ 		</activity>
+ 		<activity android:name=".SalonActivity"
+ 		    android:label="@string/saloninstructions" >
+ 		</activity>
+ 		<activity android:name=".Salon2Activity"
+ 		    android:label="@string/salon2instructions">
+ 		</activity>
+ 		<activity android:name=".SalonFinish"
+ 		    android:label="@string/saloncomplete"
+ 		    android:theme="@android:style/Theme.Dialog">
+ 		</activity>
+ 		<activity android:name=".MallActivity"
+ 		    android:label="@string/mallinstructions">
+ 		</activity>
+ 		<activity android:name=".MallFinish"
+ 		    android:label="@string/mallcomplete"
+ 		    android:theme="@android:style/Theme.Dialog">
+ 		</activity>
+    </application>
+
+</manifest>

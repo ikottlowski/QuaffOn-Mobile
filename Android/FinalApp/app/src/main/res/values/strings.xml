@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Final App</string>
+    <string name="PARTY">PARTY!</string>
+    <string name="action_settings">Settings</string>
+    <string android:layout_height="wrap_content" android:id="@+id/salon" android:layout_width="wrap_content" name="salontext">SALON</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/MainInstructions" name="MainInstructions">Its your BFFs birthday!  You need to go to each place on the map to complete a task for her party to make it great!  Good luck!</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@id/ibutton" name="ibutton">instructions</string>
+    <string android:id="@+id/instructions" android:layout_width="wrap_content" android:layout_height="wrap_content" name="instructions">Instructions</string>
+    <string android:layout_height="wrap_content" android:id="@+id/HerSkinIs" android:layout_width="wrap_content" name="HerSkinIs">Her skin is:</string>
+    <string android:layout_width="wrap_content" android:id="@+id/saloninstructions" android:layout_height="wrap_content" name="saloninstructions">A party guest needs help with her makeup.  Pick the makeup that will go well with her skin.  HINT:  Alcohol dries out skin and cream makes skin more oily.</string>
+    <string android:id="@+id/oily" android:layout_height="wrap_content" android:layout_width="wrap_content" name="oily">OILY</string>
+    <string android:layout_width="wrap_content" android:id="@+id/alcohol" android:layout_height="wrap_content" name="alcohol">Alcohol Based Makeup</string>
+    <string android:id="@+id/cream" android:layout_height="wrap_content" android:layout_width="wrap_content" name="cream">Cream Based Makeup</string>
+    <string android:id="@+id/salonwrong" android:layout_height="wrap_content" android:layout_width="wrap_content" name="salonwrong">That does not seem right.  Lets try something else.</string>
+    <string android:layout_width="wrap_content" android:id="@+id/oops" android:layout_height="wrap_content" name="oops">oops...</string>
+    <string android:id="@+id/dry" android:layout_height="wrap_content" android:layout_width="wrap_content" name="dry">DRY</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/salon2instructions" name="salon2instructions">Perfect! The alcohol balanced the oil of her face.  Lets help another guest.  HINT:  Alcohol dries out skin and cream makes skin more oily.</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/salonfinish" name="salonfinish">Perfect!  The cream has moisturized her face.  Great job!</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/cont" name="cont">CONTINUE</string>
+    <string name="saloncomplete">Salon Complete!</string>
+    <string android:id="@+id/mallinstructions" android:layout_height="wrap_content" android:layout_width="wrap_content" name="mallinstructions">You have $15 to buy your BFF a present.  Pick 2 items that added together cost $15 or less.</string>
+    <string name="select">Choose 2 items</string>
+    <string name="checkprice">Check Price</string>
+    <string name="dress">Dress</string>
+    <string name="necklace">Necklace</string>
+    <string name="purse">Purse</string>
+    <string name="shoes">Shoes</string>
+    <string name="mallfinish">Perfect! Your BFF will love what you picked out!</string>
+    <string name="mallcomplete">Mall Complete!</string>
+    <string name="malltxt">MALL</string>
+    <string name="salontxt">SALON</string>
+
+</resources>

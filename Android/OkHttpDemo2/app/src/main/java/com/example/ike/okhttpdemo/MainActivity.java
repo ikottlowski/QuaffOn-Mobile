@@ -6,8 +6,10 @@ import android.util.Log;
 
 import com.squareup.okhttp.Call;
 import com.squareup.okhttp.Callback;
+import com.squareup.okhttp.MediaType;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
+import com.squareup.okhttp.RequestBody;
 import com.squareup.okhttp.Response;
 
 import org.json.JSONException;
@@ -18,6 +20,9 @@ import java.io.IOException;
 
 public class MainActivity extends Activity {
 
+    public static final MediaType MEDIA_TYPE_PLAIN
+            = MediaType.parse("text/plain; charset=utf-8");
+
     public static final String TAG = MainActivity.class.getSimpleName();
 
     private PageData pageData;
@@ -26,11 +31,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String testURL = "http://cgi.soic.indiana.edu/~team9/JSON/index.php";
+        String testURL = "http://cgi.soic.indiana.edu/~team9/Database/index.php";
         OkHttpClient client = new OkHttpClient();
 
             Request request = new Request.Builder()
                     .url(testURL)
+                    .post(RequestBody.create(MEDIA_TYPE_PLAIN, "Ike"))
                     .build();
         Call call = client.newCall(request);
 

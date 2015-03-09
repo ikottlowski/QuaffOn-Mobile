@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">A290 First Real Application</string>
+    <string name="MainTitle">Welcome to my first Real Application</string>
+    <string name="action_settings">Settings</string>
+    <string android:id="@+id/ContinueButton" android:layout_height="wrap_content" android:layout_width="wrap_content" name="ContinueButtonLabel">Continue</string>
+    <string android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/NewButton" name="NewButtonLabel">New Game</string>
+    <string android:id="@+id/AboutButton" android:layout_height="wrap_content" android:layout_width="wrap_content" name="AboutButtonLabel">About</string>
+    <string android:id="@+id/ExitButton" android:layout_width="wrap_content" android:layout_height="wrap_content" name="ExitButtonLabel">Exit</string>
+    <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/AboutContent" name="AboutText">Sudoku is a logic-based number placement puzzle. Starting with a partially completed 9x9 grid, the objective of the puzzle is to fill the remaining &quot;open&quot; tiles or spaces in the grid so that each row, each olumn, and each og the 3x3 boxes (also called blocks) contains the digits 1 to 9 exactly once. HAVE FUN!</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="AboutTitle">About My First A290 Application</string>
+	<string name="SettingsLabel">Settings&#8230;</string>
+ 	<string name="SettingsTitle">A290 First Real Application Settings</string>
+ 	<string name="SettingsShortcut">s</string>
+ 	<string name="MusicTitle">Music</string>
+ 	<string name="MusicDetail">Play Background Music</string>
+ 	<string name="HintsTitle">Hints</string>
+ 	<string name="HintsDetail">Show Hints During Play</string>
+ 	<string name="NewGameTitle">Difficulty Level</string>
+	<string name="EasyLabel">Easy</string>
+	<string name="MediumLabel">Medium</string>
+	<string name="HardLabel">Hard</string>
+	<string name="GameTitle">Game</string>
+	<string name="NoMovesLabel">No moves possible</string>
+	<string name="KeypadTitle">Keypad</string>
+    
+</resources>

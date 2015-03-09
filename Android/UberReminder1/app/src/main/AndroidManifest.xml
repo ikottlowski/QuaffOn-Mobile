@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- AndroidManifest.xml
+Manifest for Uber Reminder
+Created by: Ryder McMinn
+Created on: 3/1/15
+Last Modified by: Ryder McMinn
+Last Modified on: 3/6/15
+Assignment/Project: A290 Final Project
+Part of: Uber Reminder
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rydermcminn.uberreminder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+<uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.rydermcminn.uberreminder.URActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Broadcast receiver -->
+        <receiver   android:name=".URBroadcastReceiver"></receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+strings.xml
+Contains strings for the project
+Created by: Artur Lukin
+Created on: 3/2/15
+Last Modified by: Artur Lukin
+Last Modified on: 3/6/15
+Assignment/Project: LoudFlash
+-->
+<resources>
+
+    <string name="app_name">LoudFlash</string>
+    <string name="startButtonLabel">Start</string>
+    <string name="stopButtonLabel">Stop</string>
+    <string name="action_settings">Settings</string>
+    <string name="dBText">0</string>
+    <string name="dBFraction">0</string>
+    <string name="dBLabel">dB</string>
+    <string name="periodLabel">.</string>
+    <string name="toggleButtonLabel">On</string>
+    <string name="AboutText">About</string>
+    <string name="AboutTitle">About LoudFlash and Contact</string>
+    <string name="AboutContent">LoudFlash was created to help keep the noise down at night. \n\nSet the recommended threshold (max loudness) and the LED will flash when the sound level is higher than the threshold. \n\nDesigned and developed by: Artur Lukin \nContact me at avlukin@indiana.edu for comments.</string>
+    <string name="thresholdText">50</string>
+    <string name="textView1">Threshold: </string>
+    <string name="textView5">80dB - Vacuum\n90dB - Shouting\n100dB - Construction Site\n110dB - Chainsaw\n120dB - Thunder\n130dB - Jet Takeoff</string>
+    <string name="textView3">Decibel Levels (70dB recommended after 11 pm)</string>
+    <string name="textView4">20dB - Ticking Watch\n30dB - Silent Room\n40dB - Soft Whisper\n50dB - Library\n60dB - Conversation\n70dB - Dishwasher</string>
+
+</resources>

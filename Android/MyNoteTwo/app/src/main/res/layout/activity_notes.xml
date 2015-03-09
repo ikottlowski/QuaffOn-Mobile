@@ -1,0 +1,18 @@
+<!--  Tyler Leeth for A290 Android Final Project: Note taking app  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.indiana.mynotetwo.Notes"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/currNotebookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTEBOOK NAME"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

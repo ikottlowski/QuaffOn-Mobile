@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src/edu/indiana/loudflash/MainActivity.java" />
+    </issue>
+    <issue id="OldTargetApi" severity="ignore" />
+</lint>

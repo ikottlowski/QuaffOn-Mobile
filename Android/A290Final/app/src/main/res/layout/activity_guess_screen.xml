@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+<!--activity_guess_screen.xml
+Contains the layout for the guess screen
+Created by: Jessie Pusateri
+Created on: 3/6/15
+Last Modified by: Jessie Pusateri
+Last Modified on: 3/6/15
+Assignment/Project: A290 Android Development Final
+Part of: A290Final, Contains the layout for the guess screen-->
+    <TextView
+        android:id="@+id/GuessPromptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GuessPromptText"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/guessEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/GuessScreenUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GuessScreenUnits"
+        android:paddingBottom="35dp"
+        
+         />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GuessScreenSubmit"
+        android:onClick="setGuess" />
+    
+
+</LinearLayout>

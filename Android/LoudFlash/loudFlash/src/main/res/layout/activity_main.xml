@@ -1,0 +1,147 @@
+<!--
+activity_main.xml
+Is the main layout for the project
+Created by: Artur Lukin
+Created on: 3/2/15
+Last Modified by: Artur Lukin
+Last Modified on: 3/6/15
+Assignment/Project: LoudFlash
+References MainActivity.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.indiana.loudflash.MainActivity" >
+
+    <edu.indiana.loudflash.SpeedometerGauge
+        android:id="@+id/speedometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dBTextView"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="30dp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/dBTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/dBText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60sp"
+        android:typeface="monospace" />
+
+    <SeekBar
+        android:id="@+id/threshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/thresholdText"
+        android:layout_marginTop="10dp"
+        android:max="120"
+        android:progress="65" />
+
+    <TextView
+        android:id="@+id/flashlightTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/on_off_toggle_button"
+        android:layout_alignBottom="@+id/on_off_toggle_button"
+        android:layout_alignRight="@+id/threshold" />
+
+    <TextView
+        android:id="@+id/thresholdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speedometer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/thresholdText"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/speedometer"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/thresholdText"
+        android:gravity="right"
+        android:text="@string/textView1"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thresholdText"
+        android:layout_below="@id/speedometer"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/flashlightTest"
+        android:layout_toRightOf="@id/thresholdText"
+        android:text="@string/dBLabel"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/AboutButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/threshold"
+        android:layout_alignParentBottom="true"
+        android:text="@string/AboutText" />
+
+    <ToggleButton
+        android:id="@+id/on_off_toggle_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/AboutButton"
+        android:layout_alignBottom="@+id/AboutButton"
+        android:layout_alignRight="@+id/threshold"
+        android:checked="true"
+        android:text="@string/toggleButtonLabel"
+        android:textOff="Resume"
+        android:textOn="Pause" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/threshold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="@string/textView3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AboutButton"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:text="@string/textView4"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/textView4"
+        android:text="@string/textView5"
+        android:textSize="15sp" />
+
+</RelativeLayout>

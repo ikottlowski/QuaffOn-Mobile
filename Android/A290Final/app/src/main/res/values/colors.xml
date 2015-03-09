@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--colors.xml
+Contains the color values
+Created by: Jessie Pusateri
+Created on: 3/6/15
+Last Modified by: Jessie Pusateri
+Last Modified on: 3/6/15
+Assignment/Project: A290 Android Development Final
+Part of: A290Final, contains the color vaues-->
+<resources>
+	<color name="darkgreen">#53883A</color>
+	<color name="lightgreen">#8CC53F</color>
+	
+</resources>

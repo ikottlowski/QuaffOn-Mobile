@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--strings.xml
+Contains the color values
+Created by: Jessie Pusateri
+Created on: 3/6/15
+Last Modified by: Jessie Pusateri
+Last Modified on: 3/6/15
+Assignment/Project: A290 Android Development Final
+Part of: A290Final, contains the string vaues-->
+<resources>
+
+    <string name="app_name">Guess-TIME-ate</string>
+    <string name="hello_world">Guess-TIME-ate</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Button Label -->
+    <string name="HistoryButtonLabel">View History</string>
+    <string name="ToggleButtonLabel">On/Off</string>
+    <string name="InstructionsButtonLabel">Instructions</string>
+    <string name="MainMenuButtonLabel">Main Menu</string>
+    <string name="NotificationButtonLabel">START</string>
+    
+    <string name="InstructionsText">How good are you at sensing the passing of time? Use this app to find out! Simple press "Start" and then
+        	wait for a notification to appear in your notification bar. When it does, click on the notifcation and enter how much time
+        	you think has passed between the time you clicked "Start" and the time that the Notification arrived! 
+        	
+        	It could be as little as 0 seconds or as many as 60! You can see your results after you click submit and your
+        	history of guesses by clicking the "View History" button. Good luck!</string>
+    
+    <string name="GuessScreenLabel">Guess Screen</string>
+    <string name="GuessPromptText">Guess how long it\'s been (in seconds):</string>
+    <string name="GuessScreenSubmit">Submit</string>
+    <string name="GuessScreenUnits">(in seconds)</string>
+    
+    <string name="GuessLabel">Your Guess: </string>
+    <string name="ActualTimeLabel">Actual Time: </string>
+    <string name="DifferenceTimeLabel">Difference: </string>
+    <string name="PlaceholderLabel"> </string>
+    <string name="NumberLabel">#</string>
+    
+    <!-- Table Values -->
+    <string name="TableTitle">Guess History</string>
+    <string name="TableEntry1">1</string>
+    <string name="TableEntry2">2</string>
+    <string name="TableEntry3">3</string>
+    <string name="TableEntry4">4</string>
+    <string name="TableEntry5">5</string>
+    <string name="TableGuess">Guess</string>
+    <string name="TableActual">Actual</string>
+    <string name="TableDifference">Difference</string>
+    
+    
+    
+    
+
+</resources>
