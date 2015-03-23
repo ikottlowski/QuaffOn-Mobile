@@ -68,17 +68,12 @@ public class MainActivity extends Activity {
     }
 
     public void onClickPost(View v) throws IOException {
-/*
-        OkPost post = new OkPost();
-        String json = OkPost.inputJson("ike");
-        post.post("http://cgi.soic.indiana.edu/~team9/Database/index.php", json);
-*/
         HttpClient httpClient = new DefaultHttpClient();
 
         HttpPost httpPost = new HttpPost("http://cgi.soic.indiana.edu/~team9/Database/index.php");
-        List<NameValuePair> nameValuePairs = new ArrayList<>(1);
+        List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         nameValuePairs.add(new BasicNameValuePair("name", "zombies"));
-        httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+        httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));
         HttpResponse response = httpClient.execute(httpPost);
 
         new HttpHandler() {
@@ -86,9 +81,9 @@ public class MainActivity extends Activity {
             public HttpUriRequest getHttpRequestMethod() throws UnsupportedEncodingException {
                 HttpPost httpPost = new HttpPost("http://cgi.soic.indiana.edu/~team9/Database/index.php");
 
-                List<NameValuePair> nameValuePairs = new ArrayList<>(1);
+                List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
                 nameValuePairs.add(new BasicNameValuePair("name", "zombies"));
-                httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+                httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));
                 return httpPost;
 
             }
