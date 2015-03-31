@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.quaffon.team9.quaffonbloomington.MainActivity"/>
+      <point      
+        x = "1660"      
+        y = "672"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.quaffon.team9.quaffonbloomington.MainActivity"/>
+      <point      
+        x = "3416"      
+        y = "780"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.quaffon.team9.quaffonbloomington.SignUpActivity"/>
+      <point      
+        x = "3556"      
+        y = "2108"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.quaffon.team9.quaffonbloomington.VerifyActivity"/>
+      <point      
+        x = "264"      
+        y = "692"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

@@ -17,5 +17,8 @@
     <string name="first_name_sign_up">First Name</string>
     <string name="last_name_sign_up">Last Name</string>
     <string name="password_confirm_sign_up">Confirm</string>
+    <string name="title_activity_verify">verifyActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
