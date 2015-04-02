@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="main_backgound_green">#70ad47</color>
+    <color name="tab_indicator">#ff98938b</color>
 </resources>

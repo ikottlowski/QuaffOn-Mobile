@@ -1,40 +1,37 @@
 package com.quaffon.team9.quaffonbloomington;
 
-import android.app.Activity;
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.util.Log;
-import android.view.View;
-import android.view.Window;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
 
+import com.quaffon.team9.SlidingTabView.ViewPagerAdapter;
+import com.quaffon.team9.SlidingTabView.SlidingTabLayout;
 
-public class MainActivity extends Activity{
-
-    private static final String Loading_TAG = "Loading Screen Timer";
+public class MainActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_loading_screen);
+        setContentView(R.layout.activity_main);
 
-        new CountDownTimer(2000, 1000){
-            public void onTick(long millisUntilFinished){
-                Log.v(Loading_TAG, "seconds remaining: " + millisUntilFinished / 1000);
-            }
-            public void onFinish() {
-                setContentView(R.layout.activity_verify);
-                findViewById(R.id.textView3).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        setContentView(R.layout.activity_main);
-                    }
-                });
-                Log.v(Loading_TAG, "done!");
-            }
-        }.start();
+        // Get the ViewPager and set it's PagerAdapter so that it can display items
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(),
+                MainActivity.this));
 
+        // Give the SlidingTabLayout the ViewPager
+        SlidingTabLayout slidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
+        // Center the tabs in the layout
+        slidingTabLayout.setDistributeEvenly(true);
+        slidingTabLayout.setViewPager(viewPager);
+        slidingTabLayout.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
+            @Override
+            public int getIndicatorColor(int position) {
+                return getResources().getColor(R.color.tab_indicator);
+            }
+        });
     }
+
 }
 
