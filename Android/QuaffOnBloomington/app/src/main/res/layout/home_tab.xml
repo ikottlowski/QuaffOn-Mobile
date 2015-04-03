@@ -1,12 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/main_backgound_green"
+    android:weightSum="1">
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="home"
-        android:id="@+id/textView8"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="210dp"
+                android:layout_height="190dp"
+                android:background="@drawable/quaffonlogo"
+                android:id="@+id/imageView7"
+                android:contentDescription="@string/logodescription"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/drinkheartily"
+                android:id="@+id/textView12"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/about_text2"
+                android:id="@+id/textView13"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:textColor="#fffffafa"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:id="@+id/textView15"
+                android:layout_gravity="center_horizontal"
+                android:background="#fffffafa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sign up for email notifications about events and whats on tap!"
+                android:id="@+id/textView14"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:textColor="#fffffafa"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Full Name"
+                android:ems="10"
+                android:id="@+id/name"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email"
+                android:layout_gravity="center_horizontal"
+                android:text="EMAIL"
+                android:gravity="center"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Sign Me Up!"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal"
+                android:background="#fffffafa"
+                android:layout_margin="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

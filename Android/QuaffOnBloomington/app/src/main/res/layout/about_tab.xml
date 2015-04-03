@@ -1,12 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/main_backgound_green">
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="about"
-        android:id="@+id/textView7"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_text"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:textColor="#fffffafa" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView4"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/quaffon_closeup" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_text1"
+                android:id="@+id/textView6"
+                android:layout_margin="15dp"
+                android:textColor="#fffffafa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_text2"
+                android:id="@+id/textView7"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:textColor="#fffffafa" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView3"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/quaffon_taps_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_text3"
+                android:id="@+id/textView8"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:textColor="#fffffafa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_text4"
+                android:id="@+id/textView9"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:textColor="#fffffafa" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView5"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/quaffon_sampler" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_text5"
+                android:id="@+id/textView10"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:textColor="#fffffafa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_text6"
+                android:id="@+id/textView11"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:textColor="#fffffafa" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="215dp"
+                android:id="@+id/imageView6"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/quaffonlogo" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

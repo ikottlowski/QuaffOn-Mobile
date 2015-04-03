@@ -1,18 +1,18 @@
 package com.quaffon.team9.quaffonbloomington;
 
-
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBarActivity;
 
 import com.quaffon.team9.SlidingTabView.ViewPagerAdapter;
 import com.quaffon.team9.SlidingTabView.SlidingTabLayout;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         // Get the ViewPager and set it's PagerAdapter so that it can display items
@@ -32,6 +32,7 @@ public class MainActivity extends FragmentActivity {
             }
         });
     }
+
 
 }
 

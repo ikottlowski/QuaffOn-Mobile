@@ -5,11 +5,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.quaffon.team9.quaffonbloomington.AboutTab;
-import com.quaffon.team9.quaffonbloomington.BeerTab;
-import com.quaffon.team9.quaffonbloomington.FoodTab;
-import com.quaffon.team9.quaffonbloomington.HomeTab;
-import com.quaffon.team9.quaffonbloomington.MapsTab;
+import com.quaffon.team9.tabs.AboutTab;
+import com.quaffon.team9.tabs.BeerTab;
+import com.quaffon.team9.tabs.FoodTab;
+import com.quaffon.team9.tabs.HomeTab;
+import com.quaffon.team9.tabs.MapsTab;
 import com.quaffon.team9.quaffonbloomington.R;
 
 
@@ -19,11 +19,11 @@ import com.quaffon.team9.quaffonbloomington.R;
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     static private int[] imageResId = {
-            R.mipmap.ic_maps_tab,
-            R.mipmap.ic_quaff_logo_tab,
             R.mipmap.ic_home_tab,
+            R.mipmap.ic_beer_tab,
             R.mipmap.ic_food_tab,
-            R.mipmap.ic_beer_tab
+            R.mipmap.ic_quaff_logo_tab,
+            R.mipmap.ic_maps_tab
     };
     final int PAGE_COUNT = 5;
     private String tabTitles[] = new String[] { "Maps", "About", "Home", "Food", "Beer" };
@@ -43,15 +43,15 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
 
         if(position == 0) {
-            return new MapsTab();
-        } else if(position == 1) {
-            return new AboutTab();
-        } else if(position == 2){
             return new HomeTab();
-        } else if(position == 3) {
-            return new FoodTab();
-        } else if(position == 4) {
+        } else if(position == 1) {
             return new BeerTab();
+        } else if(position == 2){
+            return new FoodTab();
+        } else if(position == 3) {
+            return new AboutTab();
+        } else if(position == 4) {
+            return new MapsTab();
         }
         return PageFragment.newInstance(position + 1);
     }
